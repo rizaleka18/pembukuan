@@ -6,6 +6,8 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('index');
+        helper('url');
+        $title['title'] = 'Bsr Medianet';
+        return view('index', $title);
     }
 }
